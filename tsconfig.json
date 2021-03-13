@@ -9,6 +9,9 @@
     "outDir": "./dist",
     "moduleResolution": "node",
     "baseUrl": ".",
+    "paths": {
+      "@constants/*": ["src/constants/*"]
+    },
     "removeComments": true,
     "noImplicitAny": true,
     "noUnusedLocals": false,
