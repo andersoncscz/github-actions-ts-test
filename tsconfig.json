@@ -10,7 +10,7 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "@constants/*": ["src/constants/*"]
+      "@constants/*": ["src/constants/*", "src/constants/index.ts"]
     },
     "removeComments": true,
     "noImplicitAny": true,

@@ -1,6 +1,10 @@
 import express from 'express'
+
+// Using tsconfig-paths to verifies how build proccess will work running on a CI in Github actions.
+import { PORT } from '@constants/'
+
+
 const app = express()
-const port = 3000
 
 app.get('/', (req, res) => {
   res.send("We're running baby! :D")
@@ -12,6 +16,6 @@ app.get('/email', (req, res) => {
   })
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`)
 })
